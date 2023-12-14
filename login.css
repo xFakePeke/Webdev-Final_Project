@@ -1,0 +1,189 @@
+.top-nav {
+    width: 100%;
+    margin-top: 0;
+}
+.navLinks {
+    z-index: 1;
+}
+.login-box, .signup-box, .contact-box{
+    position: absolute;
+    border: 2px solid rgb(12, 153, 209);
+    top: 260px;
+    width: 400px;
+    height: 450px;
+    background: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+}
+.login-box form, .signup-box form, .contact-box form {
+    width: 78%;
+    color: rgb(12, 153, 209);
+}
+
+.signup-box {
+    height: 900px;
+}
+
+.contact-box {
+    height: 850px;
+}
+
+h2 {
+    font-size: 2em;
+    text-align: center;
+    transition: .5s ease;
+}
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 30px 0;
+}
+
+.input-box span{
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: rgb(12, 153, 209);
+    transition: .5s ease;
+}   
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+#inputMessage textarea {
+    width: 100%;
+    height: 200px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 15px 35px 0 5px;
+    transition: .5s ease;
+    resize: none;
+}
+
+#inputMessage label {
+    top: 10%;
+}
+
+.input-box input:focus~label , .input-box input:valid~label, 
+#inputMessage textarea:valid~label, 
+#inputMessage textarea:focus~label {
+    top: -5px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;   
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    transition: .5s ease;
+}
+
+
+.input-box .icon {
+    position: absolute;
+    margin-top: 500px;
+    right: 8px;
+    font-size: 1.2em;
+    line-height: 57px;
+    transition: .5s ease;
+}
+
+
+.remember-forgot {
+    font-size: .9em;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.remember-forgot input{
+    outline: auto rgb(12, 153, 209);
+}
+
+.remember-forgot a {
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+    color: rgb(12, 153, 209);
+}
+
+.login-box button, .signup-box button, .contact-box button {
+    width: 100%;
+    height: 40px;
+    background: rgb(12, 153, 209);
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    cursor: pointer;
+    font-size: 1em;
+    color: white;
+    font-weight: 500;
+}
+
+.login-box button:hover, .signup-box button:hover, .contact-box button:hover {
+    background: #cd945b;
+}
+
+.register-link {
+    font-size: .9em;
+    text-align: center;
+    margin: 25px 0 10px;
+    transition: .5s ease;
+}
+
+.register-link p a {
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+    color: rgb(12, 153, 209);
+}
+
+.toggle .text {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1em;
+    z-index: 1;
+    text-transform: uppercase;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+footer {
+    border-top: 3px solid rgb(12, 153, 209);
+}
+@media (max-width: 767px) {
+    .login-box, .signup-box, .contact-box {
+        width: max(340px,52vw);
+    }
+}

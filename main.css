@@ -1,0 +1,677 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    text-decoration: none;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+.blButton {
+    color: white;
+    background-image: linear-gradient(to right, rgb(12, 140, 191) , rgb(12, 153, 209) );
+    border-radius: 5px;
+    padding: 5% 0px;
+    width: 70%;
+}
+
+.blButton:hover {
+    background-image: linear-gradient(to right, #b07f4e,#cd945b);
+}
+
+/* First Container */
+
+#atop {
+    background-image: 
+    linear-gradient(0deg, rgba(255, 255, 255,1) 5%, rgba(255, 255, 255, 0) 25%),
+    linear-gradient(15deg, rgba(255, 255, 255,1) 15%, rgba(255, 255, 255, 0) 25%),
+    linear-gradient(345deg, rgba(255, 255, 255,1) 15%, rgba(255, 255, 255, 0) 25%),
+    url(img/Pool_Image1.jpg);
+}
+
+.topperware {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;    
+    width: 100%;
+    height: 1000px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.top-nav {
+    height: clamp(70px,5px + 10vw,130px);
+    border-bottom: 7px solid rgb(12, 153, 209);
+    width: 72.5%;
+    margin-top: 55px;
+    background-color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.theburgermenu {
+    font-size: 20px;
+}
+
+.navLinks {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+}
+
+.top-nav #web-logo {
+    height: 100%;
+
+}
+
+ul {
+    list-style: none;
+}
+
+.anada {
+    flex: 1;
+    text-align: right;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.anada li {
+    display: inline-block;
+}
+
+.anada li a {
+    font-size: clamp(10px,1px + 1vw,18px);
+    font-weight: 500;
+    color: black;
+}
+
+.current {
+    text-decoration: underline;
+}
+
+.anada li a:hover {
+    color: rgb(12, 153, 209);
+}
+
+.top-nav ul img {
+    width: 2vw;
+}
+
+.anada2 {
+    margin: 0px;
+    padding: 10px;
+}
+
+.anada2 li {
+    height: 100%;
+    display: inline-block;
+}
+
+.anada2 img {
+    padding: 1px;
+}
+
+span {
+    height: clamp(7px,1px + 1vw,15px);
+    border-right: 1px solid #838383;
+}
+
+.top-nav button {
+    height: 100%;
+    width: 60px;
+    border: 0;
+    background-color: skyblue;
+}
+
+.top-nav button:active {
+    animation: myfirst 1s 1;
+}
+
+@keyframes myfirst
+{
+    0%      {background: #cd945b;}
+    25%     {background: skyblue;}
+    75%     {background: skyblue;}
+    100%    {background: #cd945b;}
+}
+
+#slogan {
+    position: absolute;
+    top: 550px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+
+#slogan h2, #slogan h3{
+    margin: 0px;
+    font-size: max(25px,2.5vw);
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 7px 7px rgba(0, 0, 0, .4);
+
+}
+
+#slogan h3 {
+    margin-top: max(-2vw,-20px);
+}
+
+#slogan p {
+    margin: 0;
+    font-size: max(14px,1.4vw);
+}
+
+#slogan a {
+    color: white;
+    background-image: linear-gradient(to right, #b07f4e,#cd945b);
+    padding: 15px 50px;
+    text-align: center;
+    font-size: max(15px,1.4vw);
+    border: 0px;
+    border-radius: 5px;
+    position: relative;
+    top: 3vw;
+}
+
+.less_than {
+    font-size: min(90%,15px);
+}
+
+#slogan a:hover {
+    background-image: linear-gradient(to right, #218fac,#26a4c6);
+}
+
+/* Second Container */
+
+.serviceContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.serviceContainer .qoutes {
+    width: max(300px,50%);
+    text-align: center;
+}
+
+.serviceContainer .qoutes h1 , .missionContainer div h1 , .inquiries h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: max(30px,2.7vw);
+    margin: 0;
+}
+
+.serviceContainer .qoutes p , .inquiries p{
+    font-size: max(14px,0.95vw);
+}
+
+.serviceContainer .qoutes p a {
+    font-weight: 1000;
+    color: rgb(12, 153, 209);
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    width: max(350px,70%);
+    margin: 50px 0px 30px;
+}
+
+.services div {
+    border: 1px solid skyblue;
+    width: 30%;
+    padding: 40px 20px;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services div img {
+    width: 60%;
+}
+
+/* Third Container */
+
+.missionContainer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.missionContainer #missionStatement {
+    padding: 0% 4%;
+    border: 1px solid skyblue;
+    height: max(500px, 36vw);
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.missionContainer div a {
+    text-align: center;
+    padding: 5% 0px;
+    width: 70%;
+}
+
+.missionContainer #pool2Img {
+    background-image: 
+    linear-gradient(180deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255, 0) 10%),
+    linear-gradient(150deg, rgba(255, 255, 255,1) 10%, rgba(255, 255, 255, 0) 30%),
+    linear-gradient(210deg, rgba(255, 255, 255,1) 10%, rgba(255, 255, 255, 0) 30%),
+    linear-gradient(90deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255, 0) 10%),
+    linear-gradient(25deg, rgba(255, 255, 255,1) 20%, rgba(255, 255, 255, 0) 40%),
+    linear-gradient(345deg, rgba(255, 255, 255,1) 15%, rgba(255, 255, 255, 0) 25%),url(img/Pool\ 2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 800px;
+    width: 1000px;
+}
+
+/* Fourth Container */
+
+.f4Container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.f4Container #pool3Img {
+    width: 100%;
+    height: 1050px;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255,1) 0%, rgba(255, 255, 255, 0) 10%),url(img/pool\ 3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.f4Container .blank {
+    height: 5vw;
+}
+
+.Tags {
+    position: absolute;
+    margin-top: 900px;
+    width: max(350px,70%);
+    display: flex;
+    justify-content: space-between;
+}
+
+.Tags div {
+    border: 1px solid skyblue;
+    width: 30%;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.Tags div img {
+    width: 60%;
+}
+
+.f4Container .inquireContainer {
+    width: 100%;
+    height: max(500px,35vw);
+    background-color: #f4f9fb;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.inquireContainer .inquiries {
+    width: 100%;
+    margin-bottom: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.inquiries form {
+    width: 70%;
+    margin-top: max(10px,2vw);
+    display: flex;
+    justify-content: space-between;
+}
+
+.inquiries form input {
+    font-family: 'Poppins', sans-serif;;
+    border: 1px solid skyblue;
+    border-radius: 5px;
+    font-size: max(15px,.9vw);
+    padding: 20px 2vw;
+}
+
+.inquiries form input:hover , .inquiries form input:focus{
+    outline: none;
+    border: 1px solid #cd945b;
+}
+
+.inquiries form button {
+    color: white;
+    background-image: linear-gradient(to right, #b07f4e,#cd945b);
+    font-size: max(15px,1vw);
+    border: 0px;
+    border-radius: 5px;
+}
+
+.inquiries form button:hover {
+    background-image: linear-gradient(to right, #218fac,#26a4c6);
+    cursor: pointer;
+}
+
+/* Last Container */
+
+.lastContainer {
+    min-height: 450px;
+    background-color: #218fac;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.conInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.conInfo #ciHeader h1 {
+    margin-bottom: 0;
+    font-size: max(30px,2.2vw);
+}
+
+.conInfo #ciHeader h1 , .conInfo .info .pbCorp h2 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.conInfo .info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-end;
+}
+
+
+.conInfo .info img {
+    background-color: white;
+    padding: 5px;
+    width: max(100px,7.5vw);
+}
+
+.conInfo .info p {
+    font-size: max(12px,0.93vw);
+    margin: 0px;
+}
+
+
+.conInfo .info .infoAddPho {
+    width: max(300px,30vw);
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+
+.lastContainer nav {
+    width: 100%;
+}
+
+.lastContainer nav ul {
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastContainer nav ul li {
+    width: 100%;
+    color: white;
+    font-size: max(13px,1vw);
+    white-space: nowrap;
+}
+
+.lastContainer nav ul li a {
+    color: white;
+}
+
+.lastContainer nav span {
+    border-right: 1px solid white;
+}
+
+/* Footer */
+
+
+footer {
+    height: max(80px,5vw);
+    font-size: max(15px,0.95vw);
+}
+
+footer p {
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+}
+
+footer .fa-circle {
+    font-size: 5px;
+    margin-right: 6px;
+}
+
+@media (min-width: 1024px) {
+
+    .inquiries form input {
+        width: 27%;
+    }
+
+    .inquiries form button {
+        width: 11vw;
+        margin-right: 10px;
+    }
+
+    .lastContainer nav ul li {
+        padding: 0 3vw;
+    }
+    
+}
+
+@media (min-width: 768px) {
+  
+    .top-nav button {
+        display: none;
+    }
+
+    /* Last Container */
+
+    .conInfo #ciHeader {
+        width: max(730px,61vw);
+    }
+
+    .conInfo .info {
+        width: max(768px,61vw);
+    }
+
+    .conInfo .info .pbCorp {
+        margin: 0 5.5vw 0 1.5vw;
+        width: max(240px,20vw);
+    }
+
+    .lastContainer nav ul li {
+        padding: 0 2vw;
+    }
+
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+@media (max-width: 1023px) {
+    
+    .top-nav {
+        margin-top: 0;
+        width: 100%;
+    }
+
+    .services,.Tags {
+        margin: 10px 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .services div, .Tags div {
+        margin: 10px;
+        width: min(500px,90%);
+    }
+
+    .missionContainer {
+        justify-content: center;
+    }
+
+    .missionContainer #missionStatement {
+        position: absolute;
+        width: max(300px,50%);
+        background-color: rgb(255, 255 , 255, 0.9);
+        align-items: center;
+    }
+
+    .f4Container .inquireContainer {
+        height: min(185vw, 900px);
+    }
+
+    .inquireContainer .inquiries {
+        width: 90%;
+    }
+
+    .inquiries form {
+        width: max(300px,90%);
+        flex-direction: column;
+    }
+
+    .inquiries form input {
+        margin-bottom: 5px;
+    }
+
+    .inquiries form button {
+        height: 40px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    
+    .top-nav {
+        padding: 0px;
+    }
+
+    .top-nav img {
+        padding: 5px;
+    }
+
+    .navLinks {
+        background-color: skyblue;
+        width: 100%;
+        position: absolute;
+        top: clamp(70px,5px + 10vw,130px);
+        right: 0px;
+        justify-items: center;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .navLinks ul {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .navLinks ul li {
+        width: 100%;
+    }
+
+    .navLinks ul li a {
+        padding: 10px;
+        display: flex;
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .navLinks ul li a:hover, .navLinks ul li a:hover {
+        background-color: #cd945b;
+        color: white;
+    }
+
+    .top-nav ul img {
+        width: max(40px,6vw);
+    }
+    .navLinks span,.lastContainer span {
+        display: none;
+    }
+
+    /* Last Container */
+
+    .conInfo .info {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conInfo .info .pbCorp {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .conInfo .info .pbCorp p {
+        width: 90%;
+    }
+
+    .conInfo .info .pbCorp h2 {
+        text-align: center;
+    }
+
+    .conInfo .info p {
+        font-size: max(10px,2vw);
+    }
+
+    .conInfo .info .infoAddPho {
+        width: 90vw;
+        margin-top: 20px;
+    }
+
+    .lastContainer nav {
+        display: none;
+    }
+    
+    footer p {
+        margin: 10px;
+    }
+    
+}
