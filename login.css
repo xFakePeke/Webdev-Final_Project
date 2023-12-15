@@ -1,3 +1,7 @@
+.topperware {
+    height: 970px;
+}
+
 .top-nav {
     width: 100%;
     margin-top: 0;
@@ -5,10 +9,10 @@
 .navLinks {
     z-index: 1;
 }
-.login-box, .signup-box, .contact-box{
+.login-box, .signup-box {
     position: absolute;
     border: 2px solid rgb(12, 153, 209);
-    top: 260px;
+    top: 200px;
     width: 400px;
     height: 450px;
     background: white;
@@ -18,27 +22,30 @@
     align-items: center;
     font-family: 'Poppins', sans-serif;
 }
-.login-box form, .signup-box form, .contact-box form {
+
+.login-box {
+    top: 260px;
+}
+
+.login-box form, .signup-box form {
     width: 78%;
     color: rgb(12, 153, 209);
 }
 
 .signup-box {
-    height: 900px;
-}
-
-.contact-box {
-    height: 850px;
+    width: 700px;
+    height: 700px;
 }
 
 h2 {
+    width: 100%;
     font-size: 2em;
     text-align: center;
     transition: .5s ease;
 }
 .input-box {
     position: relative;
-    width: 100%;
+    width: 250px;
     margin: 30px 0;
 }
 
@@ -128,7 +135,7 @@ h2 {
     color: rgb(12, 153, 209);
 }
 
-.login-box button, .signup-box button, .contact-box button {
+.login-box button, .signup-box button {
     width: 100%;
     height: 40px;
     background: rgb(12, 153, 209);
@@ -141,11 +148,12 @@ h2 {
     font-weight: 500;
 }
 
-.login-box button:hover, .signup-box button:hover, .contact-box button:hover {
+.login-box button:hover, .signup-box button:hover {
     background: #cd945b;
 }
 
 .register-link {
+    width: 100%;
     font-size: .9em;
     text-align: center;
     margin: 25px 0 10px;
@@ -182,8 +190,28 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button {
 footer {
     border-top: 3px solid rgb(12, 153, 209);
 }
+@media (min-width: 768px) {
+    .signup-box form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+
 @media (max-width: 767px) {
-    .login-box, .signup-box, .contact-box {
-        width: max(340px,52vw);
+    .topperware {
+        height: 1150px;
+    }
+
+    .login-box, .signup-box {
+        width: max(330px,82vw);
+    }
+
+    .signup-box {
+        height: 900px;
+    }
+
+    .input-box {
+        width: 100%;
     }
 }
