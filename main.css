@@ -90,7 +90,6 @@ ul {
     font-size: clamp(10px,1px + 1vw,18px);
     font-weight: 500;
     color: black;
-    transition: .5s;
 }
 
 .current {
@@ -362,7 +361,6 @@ span {
     border-radius: 5px;
     font-size: max(15px,.9vw);
     padding: 20px 2vw;
-    transition: .5s;
 }
 
 .inquiries form input:hover , .inquiries form input:focus{
@@ -460,7 +458,6 @@ span {
 
 .lastContainer nav ul li a {
     color: white;
-    transition: .5s;
 }
 
 .lastContainer nav ul li a:hover {
