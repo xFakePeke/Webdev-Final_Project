@@ -102,7 +102,7 @@ ul {
 
 .top-nav ul img {
     border: 1px solid rgba(255, 255, 255,1);
-    width: 2vw;
+    width: max(25px,2vw);
 }
 
 .top-nav ul img:hover {
